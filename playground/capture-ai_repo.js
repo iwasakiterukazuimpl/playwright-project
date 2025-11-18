@@ -9,7 +9,7 @@ const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
   const browser = await chromium.launch();
   const page = await browser.newPage();
 
-  await page.goto('https://www.impl.co.jp/');
+  await page.goto('https://example.com/');
   await page.waitForTimeout(1500);
 
   // キャプチャ

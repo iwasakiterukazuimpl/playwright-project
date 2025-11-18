@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 test('company page capture', async ({ page }) => {
   // TOPへ
-  await page.goto('https://www.impl.co.jp/');
+  await page.goto('https://example.com/');
 
   // Companyへ移動
   await page.locator('#header').getByRole('link', { name: 'Company' }).click();
